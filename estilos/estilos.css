@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img_banner{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    background: #4a531bd3;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px; 
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover{
+    background: #f8b849;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+
+    label.logo{
+        font-size:30px;
+        padding-left: 50px;
+    } 
+    nav ul li a {
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 952px){
+    .checkbtn{
+        display: block;
+        
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4a531bd3;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #A2CDCD ;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    
+    }
+
+}
+
+section{
+    background: url(img/banner.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ----    BODY SECTION STARTS    ----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+
+
+p{
+    text-align: justify;
+    font-family: helvetica; 
+    font-variant: initial; 
+    margin-bottom: 20px;
+	line-height: 30px;
+    padding: 40px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.title{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: gray;
+    padding: 10px;
+}
+
+.proposito{/* estilos del contenedor para poder aplicar el aside para imagen y texto */
+    max-width: 1000px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.proposito_img{
+    border-radius: 10%;
+    background-size: cover;
+    height:  250px;
+    width: 100%;
+    padding-top: 20px;
+}
+.proposito_txt{
+   width:80%;
+   margin-bottom: 20px;
+   line-height: 30px;
+  
+    
+}
+
+.container{
+    background: rgba(0, 128, 0, 0);
+}
+.img_responsive{
+    display: none;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ----                           ----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+
+
+.navbar .is-warning {
+    color: rgba(0,0,0,.7);
+}
+.navbar {
+    background-color: #ffffff;
+    min-height: 3.25
+
+;
+    position: relative;
+    z-index: 30;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.navbar .is-warning {
+    display: block;
+   ;
+}
+.navbar-item{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+body {
+    color: #4a4a4a;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+body, button, input, optgroup, select, textarea {
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+html {
+    
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+.navbar-item{
+    font-family: Arial, Helvetica, sans-serifS;
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    align-items: left ;
+}
+
+ .is-danger{
+    background-color: #D57E7E; 
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.is-primary{
+    background-color: #8dd57e; 
+    border: none;
+    color: white;
+    padding: .5% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+th{
+    padding: 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.705);
+    
+}
+
+td{
+    padding: 30px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 100%;
+    
+}
+
+.content{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+h2{
+    padding-left: 2%;
+}
+
+
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ----     INTEGRANTES           ----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.purpose, .vision, .mission{/* estilos del contenedor para poder aplicar el aside para imagen y texto */
+    max-width: 1000px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.purpose_img, .vision_img, .mission_img{
+    width: 300px;
+    width: 350px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding:10px;
+    border-radius: 10%;
+}
+
+.purpose_txt,  .vision_txt, .mission_txt {
+   width:90%;
+   margin-bottom: 20px;
+   line-height: 30px;
+   color: #525151;
+   align-content: center;
+   padding: 10px;
+}
+
+/* * ============================== */
+/* * =====     INTEGRANTES     ==== */
+/* * ============================== */
+
+.profile{
+    text-align: center;
+    font-family:  'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.profile_txt{
+    width:90%;
+   margin-bottom: 5px;
+   line-height: 10px;
+   color: #525151;
+   padding: 10px;
+
+}
+
+
+h2{
+    color: black;
+    font-family:  Helvetica, Arial, sans-serif; 
+    text-align: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4{
+    padding-top: 5%;
+    text-align: center; 
+    color:#8dd57e;
+    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	
+}
+
+
+p{
+    text-align: justify;
+    font-family: helvetica; 
+     
+}
+
+.team_img{
+    
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    align-items: center;
+    padding:7px;
+}
+
+
+@media screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+
+    aside{
+      display: none;  
+    }
+
+    .proposito_txt{
+        width: 100%;
+        
+    }
+
+    .img_responsive{
+        display: flex;
+        border-radius: 20%;
+        background-size: cover;
+        height:  25%;
+        width: 100%;
+        padding: 0% 5% 5% 5% ;
+        
+    }
+}
